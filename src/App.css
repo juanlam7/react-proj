@@ -24,6 +24,46 @@
   color: white;
 }
 
+.App-title {
+  color: var(--theme-body-txt);
+  margin-top: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.App-content {
+  color: var(--theme-body-txt);
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+/*----------*/
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App-wrapper {
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.App-results {
+  flex-shrink: 2;
+  width: 100%;
+}
+
+.App-category {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +75,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  background-color: #ce3f07;
+  color: var(--theme-body-txt);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.btn[disabled] {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: #5c2403;
 }
