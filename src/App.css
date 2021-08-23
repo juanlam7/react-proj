@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.btn {
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  background-color: green;
+  color: var(--theme-body-txt);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn[disabled] {
+  opacity: .3;
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: red;
+}
