@@ -10,7 +10,7 @@ export default function Login({onLogin}) {
 
   useEffect(() => {
     if (isLogged) {
-      navigate('/')
+      navigate('/feed')
       onLogin && onLogin()
     }
   }, [isLogged, navigate, onLogin])
@@ -30,7 +30,7 @@ export default function Login({onLogin}) {
             <input
             maxLength="15"
             minLength="4"
-            placeholder="username"
+            placeholder="@username"
             onChange={(e) => setUsername(e.target.value)}
             value={username}
           />

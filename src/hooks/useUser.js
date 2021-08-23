@@ -1,9 +1,11 @@
 import {useCallback, useContext, useState} from 'react'
 import Context from '../context/UserContext'
+import {useLocation} from "wouter"
 
 export default function useUser () {
   const {favs, jwt, setFavs, setJWT} = useContext(Context)
   const [state, setState] = useState({ loading: false, error: false })
+  const [, navigate] = useLocation()
 
   const login = useCallback(({username}) => {
     setState({loading: true, error: false })
@@ -36,6 +38,7 @@ export default function useUser () {
   const logout = useCallback(() => {
     window.sessionStorage.removeItem('jwt')
     setJWT(null)
+    navigate('/')
   }, [setJWT])
 
   return {

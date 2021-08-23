@@ -24,6 +24,46 @@
   color: white;
 }
 
+.App-title {
+  color: var(--theme-body-txt);
+  margin-top: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+.App-content {
+  color: var(--theme-body-txt);
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+/*----------*/
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.App-wrapper {
+	width: 100%;
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.App-results {
+  flex-shrink: 2;
+  width: 100%;
+}
+
+.App-category {
+  margin-bottom: 25px;
+  width: 100%;
+}
+
 .App-link {
   color: #61dafb;
 }
