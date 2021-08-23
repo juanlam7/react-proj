@@ -22,9 +22,9 @@ export default function Release ({ message, id, image, author, likes, create_at,
             
         </div>
 
-        <div className="instagram-card-footer">
+        {/* <div className="instagram-card-footer">
             <div className="instagram-card-time">{create_at}</div>
-        </div>
+        </div> */}
     </div>
 
   )
